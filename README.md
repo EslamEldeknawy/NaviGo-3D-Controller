@@ -1,2 +1,78 @@
-# NaviGo-3D-Controller
-NaviGo V1.0 — 6-DOF 3D navigation controller software, RP2040 firmware, and one-click Autodesk Fusion 360 add-in. Print. Build. Navigate.
+# NaviGo V1.0 — 6-DOF 3D Navigation Controller for Autodesk Fusion 360
+
+> **Print. Build. Navigate.**
+
+**NaviGo V1.0** is a custom 6-DOF (Six Degrees of Freedom) 3D navigation controller engineered specifically for **Autodesk Fusion 360**, powered by a **Raspberry Pi Pico (RP2040)**, an **ADXL335** accelerometer, and capacitive touch sensors.
+
+This repository hosts the **free software package**: RP2040 firmware (`.uf2`), the one-click Windows installer (`Install_NaviGo.exe`), the Fusion 360 Python add-in, and the user manuals.
+
+---
+
+## Get the 3D Printable Files (STL / 3MF)
+
+* **Mechanical 3D Printing Files & Illustrated Assembly Guide:** Available on **[Cults3D — Download Here]([YOUR_CULTS3D_LINK_HERE](https://cults3d.com/en/3d-model/gadget/navigo-the-ultimate-diy-6-dof-cad-navigation-mouse-fusion-360-212c68502da05017087e))**
+* **Free Software, Firmware & Manuals:** Download directly from **[GitHub Releases (Latest)](https://github.com/EslamEldeknawy/NaviGo-3D-Controller/releases/latest)**
+
+https://cults3d.com/en/3d-model/gadget/navigo-the-ultimate-diy-6-dof-cad-navigation-mouse-fusion-360-212c68502da05017087e
+
+---
+
+## Key Features
+
+* **Full 6-DOF Camera Control:** Smooth Pan, Orbit, Zoom, and Roll inside Autodesk Fusion 360.
+* **Plug & Play Auto-Connection:** Automatically detects NaviGo's USB port and reconnects seamlessly if unplugged—no manual COM port setup required.
+* **One-Click Windows Installer:** `Install_NaviGo.exe` installs, updates (while preserving your settings), or cleanly uninstalls the Fusion 360 add-in in seconds.
+* **Dark-Mode Control Panel:** Dockable Fusion 360 panel with live speed sliders (Master, Pan, Orbit, Zoom, Roll), axis toggles (`Invert X`, `Invert Y`, `Swap X ↔ Y`, `Invert Zoom`), and `Re-Zero` calibration.
+* **6 Built-in LED Lighting Themes:** *Rainbow*, *The Matrix*, *Crimson Fire*, *Ocean Wave*, *Aurora*, and *Stealth (Off)*—switchable from hardware or software.
+
+---
+
+## Quick Setup Order
+
+> **IMPORTANT:** Always flash the firmware onto the Raspberry Pi Pico **before** assembling the 3D-printed enclosure.
+
+### Step 1: Flash the Firmware (Do This First)
+1. Download **`NaviGo_V1.0_Firmware.uf2`** from the **[Latest Release](https://github.com/EslamEldeknawy/NaviGo-3D-Controller/releases/latest)**.
+2. Hold the **BOOTSEL** button on your Raspberry Pi Pico while plugging it into your PC via USB, then release the button.
+3. Drag and drop `NaviGo_V1.0_Firmware.uf2` into the `RPI-RP2` drive that appears. The board will reboot automatically.
+
+### Step 2: Assemble the Hardware
+Follow the illustrated **Assembly Guide** included with the 3D printing files on Cults3D to mount the electronics and assemble the enclosure.
+
+### Step 3: Install the Fusion 360 Add-in
+1. Close Autodesk Fusion 360.
+2. Download and run **`Install_NaviGo.exe`** from the **[Latest Release](https://github.com/EslamEldeknawy/NaviGo-3D-Controller/releases/latest)**.
+3. Click **Install NaviGo Add-in**, then launch Fusion 360.
+4. Plug in NaviGo and open **`Utilities` → `ADD-INS` → `NaviGo Settings`** to customize your controller.
+
+---
+
+## Quick Gesture Reference
+
+| Action | Knob Grip / Motion | Top Touch | Zoom Sensors (Far Right) |
+| :--- | :--- | :---: | :---: |
+| **Pan (All Directions)** | Hold sides & tilt | Off | Off |
+| **Orbit (Rotate Model)** | Tilt knob | Touch Top | Off |
+| **Zoom In** | Neutral (No tilt) | Off | Touch Front |
+| **Zoom Out** | Neutral (No tilt) | Off | Touch Rear |
+| **Roll (Tilt Horizon)** | Tilt knob (Orbit motion) | Touch Top | Touch Front **OR** Rear |
+| **Cycle LED Theme** | Neutral | Off | Quick Tap **BOTH** |
+| **Re-Zero Calibrate** | Neutral (Hands off knob) | Off | Hold **BOTH** (> 2 sec) |
+
+For full details, download **`NaviGo_User_Manual.pdf`** and **`NaviGo_Hands_On_Guide.pdf`** from the Releases page.
+
+---
+
+## Important Compatibility Notice
+
+* **Not a Standard Computer Mouse:** NaviGo does not move your Windows cursor or replace your regular desktop mouse.
+* **Fusion 360 Exclusive:** Designed specifically as a companion tool for **Autodesk Fusion 360**; it will not operate outside of Fusion 360.
+* **Add-in Required:** The NaviGo Fusion 360 Add-in must be installed and running for the controller to work.
+
+---
+
+## License & Credits
+
+* Software & firmware are released under the **MIT License**.
+* 3D printable mechanical files (`STL` / `3MF`) are licensed separately on Cults3D.
+* Created by **Eslam's Lab** (*Eslam Eldeknawy*).
