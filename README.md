@@ -64,7 +64,7 @@ For full details, download **`NaviGo_User_Manual.pdf`** and **`NaviGo_Hands_On_G
 ---
 ## Get the Hardware & Software
 
-* **3D Printable Files (STL / 3MF) & Illustrated Assembly Guide:** [Download on Cults3D](https://cults3d.com/en/3d-model/gadget/navigo-the-ultimate-diy-6-dof-cad-navigation-mouse-fusion-360-212c68502da05017087e)
+* **3D Printable Files (STL / 3MF) & Illustrated Assembly Guide:** [Download on Cults3D]([https://cults3d.com/en/3d-model/gadget/navigo-the-ultimate-diy-6-dof-cad-navigation-mouse-fusion-360-212c68502da05017087e](https://cults3d.com/en/creations/navigo-v1-0-diy-6-dof-3d-navigation-controller-for-autodesk-fusion-360))
 * **Custom 4-LED RGB PCB (Order Ready-Made):** [Order on PCBWay](https://www.pcbway.com/project/shareproject/NaviGo_V1_0_DIY_6_DOF_3D_Navigation_Controller_for_Autodesk_Fusion_360_4f7429b3.html)
 * **Free Firmware, One-Click Windows Installer & Manuals:** [Download Latest Release on GitHub](https://github.com/EslamEldeknawy/NaviGo-3D-Controller/releases/latest)
 
