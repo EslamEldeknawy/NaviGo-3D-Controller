@@ -1,0 +1,28 @@
+schema_version = "1.0.0"
+
+id = "navigo_6dof_controller"
+version = "1.0.2"
+name = "NaviGo - 6-DOF 3D Navigation Controller"
+tagline = "Proportional 6-DOF viewport navigation for NaviGo controller"
+maintainer = "Eslam Eldeknawy"
+type = "add-on"
+
+website = "https://github.com/EslamEldeknawy/NaviGo-3D-Controller"
+
+tags = ["3D View", "User Interface"]
+
+blender_version_min = "4.2.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+copyright = [
+  "2026 Eslam Eldeknawy",
+]
+
+platforms = ["windows-x64"]
+
+wheels = [
+  "./wheels/pyserial-3.5-py2.py3-none-any.whl",
+]
