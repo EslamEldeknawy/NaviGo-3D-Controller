@@ -10,10 +10,10 @@ This repository hosts the **free software package**: RP2040 firmware (`.uf2`), t
 
 ## Get the 3D Printable Files (STL / 3MF)
 
-* **Mechanical 3D Printing Files & Illustrated Assembly Guide:** Available on **[Cults3D — Download Here]([YOUR_CULTS3D_LINK_HERE](https://cults3d.com/en/3d-model/gadget/navigo-the-ultimate-diy-6-dof-cad-navigation-mouse-fusion-360-212c68502da05017087e))**
+- **Mechanical 3D Printing Files & Illustrated Assembly Guide:** Available on **[Cults3D — Download Here](https://cults3d.com/:5250150)**
 * **Free Software, Firmware & Manuals:** Download directly from **[GitHub Releases (Latest)](https://github.com/EslamEldeknawy/NaviGo-3D-Controller/releases/latest)**
 
-https://cults3d.com/en/3d-model/gadget/navigo-the-ultimate-diy-6-dof-cad-navigation-mouse-fusion-360-212c68502da05017087e
+
 
 ---
 
