@@ -81,13 +81,15 @@ For full details, download **`NaviGo_User_Manual.pdf`** and **`NaviGo_Hands_On_G
 * Software & firmware are released under the **MIT License**.
 * 3D printable mechanical files (`STL` / `3MF`) are licensed separately on Cults3D.
 * Created by **Eslam's Lab** (*Eslam Eldeknawy*).
+  
+## Development & AI Transparency
+NaviGo's mechanical CAD design, custom PCB layout, electronics architecture, and physical prototyping were designed and built from the ground up by Eslam Eldeknawy. To accelerate software development, AI coding assistants were used as a pair-programming tool to help draft and iterate on the RP2040 firmware, the Fusion 360 Python add-in, and the Windows installer—followed by extensive hands-on hardware testing, debugging, and real-world calibration.
 
 ## Support the Project
 
 The NaviGo firmware, one-click Windows installer, and Fusion 360 add-in are 100% free and open-source. If NaviGo improved your CAD workflow and you'd like to support future open-source hardware and software builds, you can buy me a coffee on Ko-fi!
 
-## Development & AI Transparency
-NaviGo's mechanical CAD design, custom PCB layout, electronics architecture, and physical prototyping were designed and built from the ground up by Eslam Eldeknawy. To accelerate software development, AI coding assistants were used as a pair-programming tool to help draft and iterate on the RP2040 firmware, the Fusion 360 Python add-in, and the Windows installer—followed by extensive hands-on hardware testing, debugging, and real-world calibration.
+
 
 [![Support me on Ko-fi](https://img.shields.io/badge/Support%20on-Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/eslameldeknawy)
 
