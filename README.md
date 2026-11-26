@@ -10,6 +10,14 @@ A completely redesigned, **100% PCB-free** DIY 6-DOF 3D navigation controller po
 
 ---
 
+## 🎥 Watch NaviGo V2.0 in Action (All 8 Platforms)
+
+[![NaviGo V2.0 Demo Across 8 CAD, 3D & Engine Apps](https://img.youtube.com/vi/HrUuJDkjKqE/maxresdefault.jpg)](https://youtu.be/HrUuJDkjKqE)
+
+▶️ **[Watch Full 2:46 Demo on YouTube](https://youtu.be/HrUuJDkjKqE)** — Native viewport navigation across 3ds Max, Blender, FreeCAD, Inventor, Maya, Unity, Fusion 360, and AutoCAD, plus a top-down view of the reactive WS2812B LED force arc.
+
+---
+
 ## 🚀 Get the Complete DIY Build Package
 
 This repository hosts the **Universal Software Installer & Firmware updates** only.  
@@ -26,13 +34,13 @@ The complete DIY package — including all **3D-printable STL/3MF files (Parts 0
 
 ## ✨ What’s New in V2.0
 
-* **100% PCB-Free Architecture:** Eliminates custom PCB fabrication. Uses a generic off-the-shelf WS2812B LED ring and a simple 2×6 stripboard power rail.
-* **Auto-Detect 8+ Accelerometers:** Firmware v2.0 automatically detects your sensor on boot:
-  * **Analog:** `ADXL335` / `GY-61` (or any 3.3V analog accelerometer such as `MMA7361`).
-  * **I2C Digital (7 models):** `ADXL345`, `MPU6050`, `MPU6500`, `MPU9250`, `LIS3DH`, `MMA8452Q`, `BMI160`.
-* **Integrated-Spacer Spring:** The standalone spacer from V1.0 is merged directly into the high-tension spring (`Part 2`) for cleaner assembly.
-* **Onboard EEPROM Hardware Tuning:** Configure LED count (`4–64 LEDs`), ring rotation, `Invert X/Y`, `Swap X/Y`, and `Swap Zoom` directly from the installer — no code editing or resoldering required.
-* **One-Click Universal Installer (Windows & Linux):** Flash firmware (`NaviGo.uf2`), detect sensors, tune EEPROM settings, and install/repair native plugins from one interface.
+- **100% PCB-Free Architecture:** Eliminates custom PCB fabrication. Uses a generic off-the-shelf WS2812B LED ring and a simple 2×6 stripboard power rail.
+- **Auto-Detect 8+ Accelerometers:** Firmware v2.0 automatically detects your sensor on boot:
+  - **Analog:** `ADXL335` / `GY-61` (or any 3.3V analog accelerometer such as `MMA7361`).
+  - **I2C Digital (7 models):** `ADXL345`, `MPU6050`, `MPU6500`, `MPU9250`, `LIS3DH`, `MMA8452Q`, `BMI160`.
+- **Integrated-Spacer Spring:** The standalone spacer from V1.0 is merged directly into the high-tension spring (`Part 2`) for cleaner assembly.
+- **Onboard EEPROM Hardware Tuning:** Configure LED count (`4–64 LEDs`), ring rotation, `Invert X/Y`, `Swap X/Y`, and `Swap Zoom` directly from the installer — no code editing or resoldering required.
+- **One-Click Universal Installer (Windows & Linux):** Flash firmware (`NaviGo.uf2`), detect sensors, tune EEPROM settings, and install/repair native plugins from one interface.
 
 ---
 
@@ -73,8 +81,8 @@ The complete DIY package — including all **3D-printable STL/3MF files (Parts 0
 
 Already built your NaviGo? Grab the latest Universal Installer and Firmware from the **[Releases](../../releases)** page:
 
-* **Windows:** Run `Install_NaviGo.exe` → click **Flash Firmware v2.0** → click **Detect Sensor** → install your native plugins in one click.
-* **Linux (Ubuntu / Arch / Fedora):** Extract `NaviGo_Linux_V2.0.tar.gz` and run the included installer script to flash firmware and deploy plugins for Blender, FreeCAD, Maya, and Unity.
+- **Windows:** Run `Install_NaviGo.exe` → click **Flash Firmware v2.0** → click **Detect Sensor** → install your native plugins in one click.
+- **Linux (Ubuntu / Arch / Fedora):** Extract `NaviGo_Linux_V2.0.tar.gz` and run the included installer script to flash firmware and deploy plugins for Blender, FreeCAD, Maya, and Unity.
 
 ---
 
