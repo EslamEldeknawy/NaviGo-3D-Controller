@@ -1,88 +1,83 @@
-<div align="center">
+# NaviGo V2.0 — DIY 6-DOF 3D Navigation Controller
 
-#  NaviGo — 6-DOF 3D CAD & Engine Controller
-### **Unified Auto-Flasher, Sensor Configurator & Native 8-Suite Add-in Manager**
+**Print. Build. Navigate.**  
+A completely redesigned, **100% PCB-free** DIY 6-DOF 3D navigation controller powered by the **Waveshare RP2040-Zero**, delivering smooth native viewport control across **8 major CAD, 3D, and game-engine platforms** on **Windows & Linux**.
 
-[![Release](https://img.shields.io/badge/Release-v1.1.0-0284c7?style=for-the-badge)](../../releases/latest)
-[![OS](https://img.shields.io/badge/OS-Windows_10_%26_11-0f172a?style=for-the-badge)](#)
-[![MCU](https://img.shields.io/badge/MCU-Waveshare_RP2040--Zero-38bdf8?style=for-the-badge)](#)
-[![Suites](https://img.shields.io/badge/Native_Suites-8_Platforms-10b981?style=for-the-badge)](#)
-
-**True native 6-DOF viewport navigation across 8 industry-standard CAD, 3D modeling, and game-engine suites—powered by a 1-click Windows configurator and automatic 8-sensor firmware.**
-
-[⬇️ Download Install_NaviGo.exe (v1.1.0)](../../releases/latest) &bull; [📺 Eslam's Lab on YouTube](https://www.youtube.com/c/EslamsLab)
-
-<br>
-
-### Supported Platforms
-
-![Fusion 360](https://img.shields.io/badge/Fusion_360-FF6B00?style=for-the-badge&logo=autodesk&logoColor=white)
-![Inventor](https://img.shields.io/badge/Inventor-D97706?style=for-the-badge&logo=autodesk&logoColor=white)
-![3ds Max](https://img.shields.io/badge/3ds_Max-0D9488?style=for-the-badge&logo=autodesk&logoColor=white)
-![AutoCAD](https://img.shields.io/badge/AutoCAD-E11D48?style=for-the-badge&logo=autodesk&logoColor=white)
-![Maya](https://img.shields.io/badge/Maya-0284C7?style=for-the-badge&logo=autodesk&logoColor=white)
-![Blender](https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white)
-![FreeCAD](https://img.shields.io/badge/FreeCAD-CB333B?style=for-the-badge&logo=freecad&logoColor=white)
-![Unity](https://img.shields.io/badge/Unity-111827?style=for-the-badge&logo=unity&logoColor=white)
-
-<br>
-
-<img src="installer_ui.png" alt="NaviGo V1.1 Universal Installer & Hardware Setup" width="460" />
-
-</div>
+![Platform](https://img.shields.io/badge/OS-Windows%20%7C%20Linux-0284C7?style=for-the-badge)
+![Microcontroller](https://img.shields.io/badge/MCU-RP2040--Zero-141820?style=for-the-badge)
+![Apps](https://img.shields.io/badge/Native%20Plugins-8%20Platforms-16A34A?style=for-the-badge)
+![Architecture](https://img.shields.io/badge/Hardware-PCB--Free-D97706?style=for-the-badge)
 
 ---
 
-##  Software Highlights (`Install_NaviGo.exe` v1.1)
+## 🚀 Get the Complete DIY Build Package
 
-Most DIY 6-DOF controllers rely on choppy keyboard/mouse shortcuts, require manual Python library setups, or lock you into a single accelerometer chip. **NaviGo v1.1** puts the entire hardware and software stack into a single standalone Windows executable:
+This repository hosts the **Universal Software Installer & Firmware updates** only.  
+The complete DIY package — including all **3D-printable STL/3MF files (Parts 0–8)** and **2 full illustrated PDF guides** (Mechanical Assembly + Electronics & Wiring) — is available on Gumroad:
 
-- **🖱️  1-Click Firmware Flashing (`Auto-Boot + .uf2`):** Flashes Firmware v1.1 directly onto the **Waveshare RP2040-Zero** (or standard Raspberry Pi Pico) with zero external tools.
-- **🪄  Automatic 8-Sensor Detection:** Automatically detects whether you connected an analog `ADXL335` or any of 7 I2C accelerometers (`ADXL345`, `MPU6050`, `MPU6500`, `MPU9250`, `LIS3DH`, `MMA8452Q`, `BMI160`). Includes a live **`Detect Sensor`** test button and EEPROM mode persistence.
-- **💡 Custom WS2812B LED Ring Count (`1–64 LEDs`):** Set your exact LED count (`4, 8, 12, 16, 24`, or any value `1–64`) and save directly to EEPROM via **`Apply HW Config`**. The ring provides real-time reactive color feedback for **Orbit**, **Pan**, and **Zoom** modes.
-- **➕  8-Platform Native Add-in Manager:** Automatically detects installed versions on your PC and lets you **Install**, **Repair**, or **Uninstall** native camera plugins individually or in batch.
-- **🎯 Zero-Latency Native Viewport APIs:** Communicates directly with each application's native camera API for smooth, proportional 6-DOF control without overriding your custom hotkeys.
-- **🚫 Zero Custom PCB Architecture:** Engineered for direct point-to-point wiring between standard off-the-shelf modules.
+👉 **[Download NaviGo V2.0 Complete DIY Package on Gumroad](https://eslamslab.gumroad.com/l/navigo-v2/FIRST50)**  
+🔥 **Launch Offer:** Use code **`FIRST50`** at checkout for an exclusive early-bird discount *(limited to the first 50 makers!)*
+
+> **Don't have a 3D printer or don't want to solder?**  
+> We are preparing **Hardware DIY Kits** and **Pre-Assembled Plug & Play** units.  
+> ⏳ **[Join the Official Hardware Waitlist Here](https://tally.so/r/Yj48Ev)**
 
 ---
 
-## 🧩 Supported Software Suites (Native Integrations)
+## ✨ What’s New in V2.0
 
-| Suite | Supported Versions | Integration Architecture |
+* **100% PCB-Free Architecture:** Eliminates custom PCB fabrication. Uses a generic off-the-shelf WS2812B LED ring and a simple 2×6 stripboard power rail.
+* **Auto-Detect 8+ Accelerometers:** Firmware v2.0 automatically detects your sensor on boot:
+  * **Analog:** `ADXL335` / `GY-61` (or any 3.3V analog accelerometer such as `MMA7361`).
+  * **I2C Digital (7 models):** `ADXL345`, `MPU6050`, `MPU6500`, `MPU9250`, `LIS3DH`, `MMA8452Q`, `BMI160`.
+* **Integrated-Spacer Spring:** The standalone spacer from V1.0 is merged directly into the high-tension spring (`Part 2`) for cleaner assembly.
+* **Onboard EEPROM Hardware Tuning:** Configure LED count (`4–64 LEDs`), ring rotation, `Invert X/Y`, `Swap X/Y`, and `Swap Zoom` directly from the installer — no code editing or resoldering required.
+* **One-Click Universal Installer (Windows & Linux):** Flash firmware (`NaviGo.uf2`), detect sensors, tune EEPROM settings, and install/repair native plugins from one interface.
+
+---
+
+## 🖥️ Supported Software (8 Native Platforms)
+
+| Platform | Supported Versions | OS Support |
 | :--- | :--- | :--- |
-| **Autodesk Fusion 360** | Latest | Native Viewport Add-in |
-| **Autodesk Inventor** | 2025 – 2026+ | Native Viewport Add-in |
-| **Autodesk 3ds Max** | 2022 – 2027+ | Native Viewport Plugin |
-| **Autodesk AutoCAD** | 2025 – 2027+ | Native Viewport API |
-| **Autodesk Maya** | 2022 – 2027+ | Native Viewport Plugin |
-| **Blender** | 3.x / 4.x+ | Native Add-on |
-| **FreeCAD** | 0.21 / 1.0+ | Native Workbench Module |
-| **Unity Editor** | Unity 2022 / Unity 6+ | Native Scene View Integration |
+| **Autodesk Fusion 360** | Current / Latest | Windows |
+| **Blender** | 3.x / 4.x+ | Windows & Linux |
+| **FreeCAD** | 0.21 / 1.0+ (incl. AppImage) | Windows & Linux |
+| **Autodesk Inventor** | 2025–2026+ | Windows |
+| **Autodesk 3ds Max** | 2022–2027+ | Windows |
+| **Autodesk AutoCAD** | 2025–2027+ | Windows |
+| **Autodesk Maya** | 2022–2027+ | Windows & Linux |
+| **Unity Editor** | 2022 / Unity 6+ | Windows & Linux |
 
 ---
 
-## 🔌 Supported Hardware Modules
+## ⚡ Quick Hardware & Pinout Overview (RP2040-Zero)
 
-| Component | Supported Hardware | Configuration in `Install_NaviGo.exe` |
+> **⚠️ 3.3V POWER ONLY:** Every module (Accelerometer, 3× Touch Sensors, and the WS2812B LED Ring) MUST be powered from the **3.3V (`3V3`)** pin. Do **NOT** connect anything to the `5V` pin.
+
+| Component / Signal | RP2040-Zero Pin | Notes |
 | :--- | :--- | :--- |
-| **Microcontroller** | **Waveshare RP2040-Zero** (USB-C) or standard RP2040 Pico | 1-click `.uf2` flash via **Flash Firmware v1.1** |
-| **Accelerometer** *(Any 1)* | **Analog:** `ADXL335`<br>**I2C:** `ADXL345`, `MPU6050`, `MPU6500`, `MPU9250`, `LIS3DH`, `MMA8452Q`, `BMI160` | Set **Sensor Mode (EEPROM)** to `Auto` or lock a specific sensor |
-| **Touch Inputs** | **3&times; TTP233** Capacitive Touch Sensors | 1&times; Mode Toggle (Orbit / Pan) + 2&times; Zoom In / Out |
-| **Reactive LEDs** | **Any WS2812B Addressable Ring (< 55 mm OD)** | Set **LED Ring Count (`1–64`)** &rarr; **Apply HW Config** |
+| **WS2812B LED Ring (`DI`)** | `GPIO 0` | Connect to **Data IN (`DI`)** only; ignore `DO` (`4–64 LEDs`, 16-LED standard) |
+| **Zoom OUT Touch (`TTP223`)** | `GPIO 2` | Swappable with Zoom IN via Installer |
+| **Zoom IN Touch (`TTP223`)** | `GPIO 3` | Swappable with Zoom OUT via Installer |
+| **Main Top Touch (`TTP223`)** | `GPIO 4` | Mounted inside knob (`15 cm` flexible leads) |
+| **Analog Accel (`XOUT / YOUT`)** | `GPIO 26 / GPIO 27` | Axis order swappable in EEPROM / CAD panel |
+| **I2C Accel (`SDA / SCL`)** | `GPIO 26 / GPIO 27` | `SDA → GPIO 26`, `SCL → GPIO 27` (**Do NOT swap!**) |
+| **Power Rail (All 5 Modules)** | `3.3V & GND` | Distribute via a `2×6` stripboard rail — **never use 5V** |
+
+*(Full step-by-step wiring diagrams and exploded 3D assembly views are included in the 2 PDF guides on Gumroad.)*
 
 ---
 
-## 🚀 Quick Usage
+## 📦 Software & Firmware Updates
 
-1. Download **`Install_NaviGo.exe`** from the [Latest Release](../../releases/latest) and run it on Windows 10/11.
-2. Close open CAD/3D applications so the serial port is free.
-3. Click **`Flash Firmware v1.1 to RP2040 (Auto-Boot + .uf2)`** *(if flashing a new Waveshare RP2040-Zero for the first time, hold **BOOT** and tap **RESET** while connected via USB-C)*.
-4. Choose your **LED Ring Count (1–64)**, keep **Sensor Mode** on `Auto`, and click **`Apply HW Config`** followed by **`Detect Sensor`**.
-5. Select your installed design suites in Section 2 and click **`Install / Repair Selected`**.
+Already built your NaviGo? Grab the latest Universal Installer and Firmware from the **[Releases](../../releases)** page:
+
+* **Windows:** Run `Install_NaviGo.exe` → click **Flash Firmware v2.0** → click **Detect Sensor** → install your native plugins in one click.
+* **Linux (Ubuntu / Arch / Fedora):** Extract `NaviGo_Linux_V2.0.tar.gz` and run the included installer script to flash firmware and deploy plugins for Blender, FreeCAD, Maya, and Unity.
 
 ---
 
-## 📜 Copyright & License
+## 📜 License
 
-Copyright &copy; 2026 **Eslam Eldeknawy ([Eslam's Lab](https://eslamslab.blogspot.com))**. All rights reserved.  
-`Install_NaviGo.exe` and its bundled firmware/add-ins are provided free for personal use with NaviGo hardware. Unauthorized commercial redistribution or re-hosting is prohibited.
+All software binaries, firmware, 3D models, and documentation for **NaviGo V2.0** are copyright © 2026 **Eslam Eldeknawy (Eslam's Lab)** and licensed for **strictly personal, non-commercial use only**. Redistribution, reselling, or commercial manufacturing without written permission is prohibited.
