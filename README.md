@@ -97,6 +97,7 @@ All electronic parts are inexpensive, off-the-shelf modules (~$10–$15 total) w
 
 Already built your NaviGo? Grab the latest Universal Installer and Firmware from the **[Releases](../../releases)** page:
 
+📖 Full step-by-step setup & axis tuning guide: [FLASHING_AND_SETUP_GUIDE.md](FLASHING_AND_SETUP_GUIDE.md)
 - **Windows:** Run `Install_NaviGo.exe` → click **Flash Firmware v2.0** → click **Detect Sensor** → install your native plugins in one click.
 - **Linux (Ubuntu / Arch / Fedora):** Extract `NaviGo_Linux_V2.0.tar.gz` and run the included installer script to flash firmware and deploy plugins for Blender, FreeCAD, Maya, and Unity.
 
