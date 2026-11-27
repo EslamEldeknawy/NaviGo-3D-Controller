@@ -58,6 +58,22 @@ The complete DIY package — including all **3D-printable STL/3MF files (Parts 0
 | **Unity Editor** | 2022 / Unity 6+ | Windows & Linux |
 
 ---
+## 🛠️ Bill of Materials (BOM)
+
+All electronic parts are inexpensive, off-the-shelf modules (~$10–$15 total) with **zero custom PCBs** required:
+
+| Component | Qty | Specification & Notes |
+| :--- | :---: | :--- |
+| **Waveshare RP2040-Zero** | 1× | USB-C microcontroller (flashed with `NaviGo.uf2` v2.0) |
+| **Accelerometer Module** | 1× | **Analog:** `ADXL335` (`GY-61`) **OR I2C (any 1):** `ADXL345`, `MPU6050`, `MPU6500`, `MPU9250`, `LIS3DH`, `MMA8452Q`, `BMI160` |
+| **Capacitive Touch Modules** | 3× | Compact `TTP223` / `TTP233` red modules (1× Top Mode Toggle + 2× Side Zoom In/Out) |
+| **WS2812B LED Ring** | 1× | `4–64 LEDs` (`16-LED` ring standard); `ID ≥ 42 mm`, `OD ≤ 70 mm` — runs directly on `3.3V` |
+| **Prototype Stripboard** | 1× | Small `2 × 6` hole piece (veroboard) for the `3.3V` and `GND` power distribution rails |
+| **M3 × 16 mm Screws** | 8× | `4×` for Middle Stack (`Part 7 → 3`) + `4×` for Bottom Base Closure (`Part 8 → 6`) |
+| **M3 × 8 mm Screws** | 8× | Fastens accelerometer holder upward through the spring (`Part 2`) into the knob |
+| **Thin Flexible Wire** | ~1 m | `28–30 AWG` silicone wire or peeled `4-wire` RGB ribbon (`15 cm` leads inside moving knob) |
+| **Thin Double-Sided Tape** | — | Non-foam thin tape for mounting touch sensors, accelerometer, and LED ring (hot glue optional) |
+
 
 ## ⚡ Quick Hardware & Pinout Overview (RP2040-Zero)
 
