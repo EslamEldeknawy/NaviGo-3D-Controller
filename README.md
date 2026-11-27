@@ -102,6 +102,9 @@ Already built your NaviGo? Grab the latest Universal Installer and Firmware from
 
 ---
 
-## 📜 License
+## 📜 License & Commercial Restrictions
 
-All software binaries, firmware, 3D models, and documentation for **NaviGo V2.0** are copyright © 2026 **Eslam Eldeknawy (Eslam's Lab)** and licensed for **strictly personal, non-commercial use only**. Redistribution, reselling, or commercial manufacturing without written permission is prohibited.
+Copyright © 2026 **Eslam Eldeknawy (Eslam's Lab)**. All Rights Reserved.
+
+- **Personal & Non-Commercial Use Only:** The documentation, pinout diagrams, firmware binaries, Universal Installer, and paid 3D-printable STL/3MF files are licensed strictly for **personal, educational, and non-commercial DIY builds** (aligned with **CC BY-NC-ND 4.0** principles).
+- **No Commercial Manufacturing or Redistribution:** Manufacturing, 3D-printing, or selling physical units/kits based on these designs, or redistributing/reselling the STL/3MF files and illustrated assembly guides without explicit written permission from the author, is strictly prohibited. See the [LICENSE](LICENSE) file for full details.
