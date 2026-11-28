@@ -29,6 +29,7 @@ The complete DIY package — including all **3D-printable STL/3MF files (Parts 0
 > **Don't have a 3D printer or don't want to solder?**  
 > We are preparing **Hardware DIY Kits** and **Pre-Assembled Plug & Play** units.  
 > ⏳ **[Join the Official Hardware Waitlist Here](https://tally.so/r/Yj48Ev)**
+> * 💬 **Community & Build Support:** [Join our Discord Server](https://discord.gg/EVMMZKuaEr)
 
 ---
 
